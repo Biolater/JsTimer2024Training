@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TimerJs</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <h1>Simple Timer</h1>
-    <div class="timer-screen">
+    <div class="timer-screen" id="timerDisplay">
         00:00
     </div>
     <div class="buttons">
-        <button id="startTimer">
+        <button onclick="startTimer()" id="startTimer">
             Start
         </button>
-        <button id="stopTimer">
+        <button onclick="stopTimer()" id="stopTimer">
             Stop
         </button>
-        <button id="resetTimer">
+        <button onclick="resetTimer()" id="resetTimer">
             Reset
         </button>
     </div>
